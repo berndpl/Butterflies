@@ -1,1 +1,10 @@
-...
+Check out the article and video at http://fiesefalle.de/butterflies
+
+Libraries used
+* org.openkinect.*
+* processing.opengl.*
+* codeanticode.glgraphics.*
+* deadpixel.keystone.* 
+* Flocking 3D Birds by Ira Greenberg
+* Kinect Tracking by Daniel Shiffmann
+* Agents and Attractors from Generative Gestaltung book

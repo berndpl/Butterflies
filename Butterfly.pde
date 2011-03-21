@@ -20,7 +20,11 @@ class Butterfly{
     posY = cos(radians(ang))*30+moveY;
 		ang++;
 		translate(posX,posY);    
-		box(10,10,20);                 
+
+		noStroke();
+		lights();
+		fill(200,250);
+		sphere(3);
 		popMatrix();
                        
 		flap = flap + flapSpeed;
@@ -29,14 +33,19 @@ class Butterfly{
 		translate(posX,posY,-w/2);    
 		rotateX(radians(90));
 		rotateY(sin(radians(flap)));
-		rect(0,0, w, w);
+//		rect(0,0, w, w);
+		fill(255,230);
+		ellipseMode(CORNER);
+		ellipse(0,0, w, w);
 		popMatrix(); 
 
 		pushMatrix();
 		translate(posX,posY,-w/2);    
 		rotateX(radians(90));    
 		rotateY(sin(radians(flap))* -1);
-		rect(-w,0, w, w);
+		fill(255,230);
+		ellipseMode(CORNER);
+  	ellipse(-w,0, w, w);
 		popMatrix(); 
 		 		        
 	}

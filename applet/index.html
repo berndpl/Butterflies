@@ -4,7 +4,7 @@
     <!-- charset must remain utf-8 to be handled properly by Processing -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    <title>Butterfly : Built with Processing</title>
+    <title>Butterflies : Built with Processing</title>
 
     <style type="text/css">
       /* <![CDATA[ */
@@ -31,7 +31,7 @@
 
   <body>
     <div id="content">
-      <div id="Butterfly_container">
+      <div id="Butterflies_container">
 
 	<!-- This version plays nicer with older browsers, 
 	     but requires JavaScript to be enabled. 
@@ -41,9 +41,9 @@
 	<script type="text/javascript">
 	  /* <![CDATA[ */
 
-	  var attributes = { code:'Butterfly.class',
-                             archive: 'Butterfly.jar',
-                             width:640, height:360 } ;
+	  var attributes = { code:'Butterflies.class',
+                             archive: 'Butterflies.jar,opengl.jar,GLGraphics.jar,keystone.jar,core.jar',
+                             width:1024, height:600 } ;
           var parameters = { };
           var version = '1.5';
           deployJava.runApplet(attributes, parameters, version);
@@ -53,13 +53,13 @@
         
 	<noscript> <div>
 	  <!--[if !IE]> -->
-	  <object classid="java:Butterfly.class" 
+	  <object classid="java:Butterflies.class" 
             	  type="application/x-java-applet"
-            	  archive="Butterfly.jar"
-            	  width="640" height="360"
+            	  archive="Butterflies.jar,opengl.jar,GLGraphics.jar,keystone.jar,core.jar"
+            	  width="1024" height="600"
             	  standby="Loading Processing software..." >
             
-	    <param name="archive" value="Butterfly.jar" />
+	    <param name="archive" value="Butterflies.jar,opengl.jar,GLGraphics.jar,keystone.jar,core.jar" />
 	    
 	    <param name="mayscript" value="true" />
 	    <param name="scriptable" value="true" />
@@ -77,11 +77,11 @@
 		 http://java.sun.com/javase/6/webnotes/install/jre/autodownload.html -->
 	    <object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
 		    codebase="http://java.sun.com/update/1.6.0/jinstall-6u18-windows-i586.cab"
-		    width="640" height="360"
+		    width="1024" height="600"
 		    standby="Loading Processing software..."  >
 	      
-	      <param name="code" value="Butterfly" />
-	      <param name="archive" value="Butterfly.jar" />
+	      <param name="code" value="Butterflies" />
+	      <param name="archive" value="Butterflies.jar,opengl.jar,GLGraphics.jar,keystone.jar,core.jar" />
 	      
 	      <param name="mayscript" value="true" />
 	      <param name="scriptable" value="true" />
@@ -117,7 +117,7 @@
       </p>
       
       <p>
-	Source code: <a href="Butterfly.pde">Butterfly</a> <a href="Fly.pde">Fly</a> 
+	Source code: <a href="Butterflies.pde">Butterflies</a> <a href="Attractor.pde">Attractor</a> <a href="Butterfly.pde">Butterfly</a> <a href="Node.pde">Node</a> 
       </p>
       
       <p>

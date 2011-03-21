@@ -6,6 +6,7 @@ class Node extends PVector{
   Node(float theX, float theY){
   	x = theX;
   	y = theY;      
+		println("Node creates");
   }          
 	
 	void update(){
